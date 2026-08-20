@@ -19,45 +19,7 @@ Repository containing practical lab sheets, implementations, and experiments for
 ## 📚 Experiments Index
 
 ### 🔬 [Experiment 1: Fundamental Image Processing Operations](experiment_1.ipynb)
-An in-depth introduction to core digital image processing operations, representation of images as multi-dimensional NumPy arrays, color space conversions, and geometric transformations.
-
-#### Breakdown of Steps Covered in Experiment 1:
-1. **Library Imports & Setup:**
-   * `cv2` (OpenCV): Core image reading, writing, filtering, transformations, and color conversions.
-   * `numpy`: Efficient multi-dimensional array operations on pixel matrices.
-   * `matplotlib.pyplot`: In-notebook visualization, plotting, and multi-panel image comparisons.
-   * `os` / `pathlib`: Cross-platform file path management and output directory generation.
-
-2. **Image Ingestion & Display:**
-   * Reading images from disk using `cv2.imread()`.
-   * Handling OpenCV's default **BGR** color space vs. Matplotlib's standard **RGB** format using `cv2.cvtColor(img, cv2.COLOR_BGR2RGB)` to prevent channel swapping artifacts.
-
-3. **Image Attributes & Metadata Inspection:**
-   * Checking dimensions (`height, width, channels`) via `.shape`.
-   * Inspecting pixel data types (`uint8` with value ranges `[0, 255]`) via `.dtype`.
-
-4. **File Formats & Compression Comparison:**
-   * Saving images using `cv2.imwrite()`.
-   * Evaluating trade-offs between **JPEG** (lossy compression, smaller size) and **PNG** (lossless compression, preserves transparency and exact pixel values).
-
-5. **Color Space Transformations:**
-   * **Grayscale (`BGR2GRAY`):** Single-channel intensity representation for efficient computation.
-   * **HSV (`BGR2HSV`):** Hue, Saturation, Value separation for lighting-invariant color thresholding and object tracking.
-   * **CIELAB (`BGR2LAB`):** Perceptually uniform color representation separating Lightness ($L^*$) from chromatic axes ($a^*$, $b^*$).
-
-6. **Geometric Transformations:**
-   * **Scaling / Resizing:** Dimension adjustments using `cv2.resize()`.
-   * **Rotation:** Center-point affine transformations via `cv2.getRotationMatrix2D()` and `cv2.warpAffine()`.
-   * **Flipping:** Horizontal mirror (`1`), vertical mirror (`0`), and dual-axis inversion (`-1`) via `cv2.flip()`.
-
-7. **Image Complement (Negative):**
-   * Pixel intensity inversion via vectorized NumPy array subtraction (`255 - image`).
-
-8. **Region of Interest (ROI) Extraction:**
-   * Spatial sub-array slicing using standard NumPy array coordinates `img[y_start:y_end, x_start:x_end]`.
-
-9. **Output Export:**
-   * Automated export of all processed image variants to a local `outputs/` directory.
+### 🔬 [Experiment 1: Contrast Enhancement and Histogram-Based Image Processing using Python and OpenCV](Experiment2Solution.ipynb)
 
 ---
 
