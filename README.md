@@ -19,7 +19,7 @@ Repository containing practical lab sheets, implementations, and experiments for
 ## 📚 Experiments Index
 
 ### 🔬 [Experiment 1: Fundamental Image Processing Operations](experiment_1.ipynb)
-### 🔬 [Experiment 1: Contrast Enhancement and Histogram-Based Image Processing using Python and OpenCV](Experiment2Solution.ipynb)
+### 🔬 [Experiment 2: Contrast Enhancement and Histogram-Based Image Processing using Python and OpenCV](Experiment2Solution.ipynb)
 
 ---
 
